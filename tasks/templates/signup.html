@@ -1,3 +1,6 @@
+{% extends 'base.html' %}
+
+{% block content %} 
 <h1>Registro</h1>
 <form action ="/signup/" method="post">  
    {% csrf_token %}
@@ -5,3 +8,4 @@
 <button>Registar</button>      
 </form>
 
+{% endblock %}  
