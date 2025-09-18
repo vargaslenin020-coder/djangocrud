@@ -8,6 +8,7 @@ class Task(models.Model):
     created = models.DateTimeField(null=True, blank = True)
     important = models.BooleanField(default=False)
     user = models.ForeignKey(User, on_delete=models.CASCADE)
+    datecompleted = models.DateTimeField(null=True, blank=True)
 
     def __str__(self):
         return self.title
